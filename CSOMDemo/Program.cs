@@ -106,8 +106,9 @@ namespace CSOMDemo
 		    string ss="123";
             Console.WriteLine("ok");
             Console.WriteLine("6666");
+            Console.WriteLine("9999");
 
         }
-         
+
     }
 }
