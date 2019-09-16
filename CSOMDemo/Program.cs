@@ -103,7 +103,8 @@ namespace CSOMDemo
             //cc.ExecuteQuery();
 			string testName="This is a test";
             Console.WriteLine(testName);
-
+            string doubleStr = "10.01";
+            double doubleNum = Convert.ToDouble(doubleStr);
             Console.WriteLine("ok");
 
         }
