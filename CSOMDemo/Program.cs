@@ -79,8 +79,8 @@ namespace CSOMDemo
             
 
             //ConditionalScope cs = new ConditionalScope(cc,()=>file.Exists,true);
-            cc.Load(file);
-            Console.WriteLine(file.Exists);
+            //cc.Load(file);
+            //Console.WriteLine(file.Exists);
             //using (cs.StartScope())
             //{
             //    file.ListItemAllFields["Test"] = "StartIfTrue";
