@@ -106,6 +106,7 @@ namespace CSOMDemo
             string doubleStr = "10.01";
             double doubleNum = Convert.ToDouble(doubleStr);
             Console.WriteLine("ok");
+            Console.WriteLine("6666");
 
         }
 
