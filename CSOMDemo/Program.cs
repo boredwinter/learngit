@@ -95,15 +95,16 @@ namespace CSOMDemo
 
         public static void ProShow()
         {
-            //ClientContext cc = GetClientContext();
-            //Web web = cc.Web;
-            //web.Title = "aaa";
-            //web.Description = "This is a test";
-            //web.Update();
-            //cc.ExecuteQuery();
+            ClientContext cc = GetClientContext();
+            Web web = cc.Web;
+            web.Title = "aaa";
+            web.Description = "This is a test";
+            web.Update();
+            cc.ExecuteQuery();
 			string testName="This is a test";
             Console.WriteLine(testName);
-
+		    string ss="123";
+			int num=Convert.ToInt32(ss);
             Console.WriteLine("ok");
 
         }
