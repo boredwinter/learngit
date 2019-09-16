@@ -76,31 +76,31 @@ namespace CSOMDemo
             ClientContext cc = GetClientContext();
 
             var file = cc.Web.GetFileByServerRelativeUrl("Site/Demo/Shared%20Documents/th.jpg");
-            
 
-            //ConditionalScope cs = new ConditionalScope(cc,()=>file.Exists,true);
+
+            ConditionalScope cs = new ConditionalScope(cc,()=>file.Exists,true);
             //cc.Load(file);
             //Console.WriteLine(file.Exists);
-            //using (cs.StartScope())
-            //{
-            //    file.ListItemAllFields["Test"] = "StartIfTrue";
-            //    file.ListItemAllFields.Update();
-            //}
-            //cc.ExecuteQuery();
-            //if (cs.TestResult.HasValue)
-            //{
-            //    Console.WriteLine(cs.TestResult.Value);
-            //}
+            using (cs.StartScope())
+            {
+                file.ListItemAllFields["Test"] = "StartIfTrue";
+                file.ListItemAllFields.Update();
+            }
+            cc.ExecuteQuery();
+            if (cs.TestResult.HasValue)
+            {
+                Console.WriteLine(cs.TestResult.Value);
+            }
         }
 
         public static void ProShow()
         {
-            ClientContext cc = GetClientContext();
-            Web web = cc.Web;
-            web.Title = "aaa";
-            web.Description = "This is a test";
-            web.Update();
-            cc.ExecuteQuery();
+            //ClientContext cc = GetClientContext();
+            //Web web = cc.Web;
+            //web.Title = "aaa";
+            //web.Description = "This is a test";
+            //web.Update();
+            //cc.ExecuteQuery();
 
             Console.WriteLine("ok");
 
