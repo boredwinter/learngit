@@ -95,12 +95,12 @@ namespace CSOMDemo
 
         public static void ProShow()
         {
-            ClientContext cc = GetClientContext();
-            Web web = cc.Web;
-            web.Title = "aaa";
-            web.Description = "This is a test";
-            web.Update();
-            cc.ExecuteQuery();
+            //ClientContext cc = GetClientContext();
+            //Web web = cc.Web;
+            //web.Title = "aaa";
+            //web.Description = "This is a test";
+            //web.Update();
+            //cc.ExecuteQuery();
 
             Console.WriteLine("ok");
 
