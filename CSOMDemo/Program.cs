@@ -102,6 +102,8 @@ namespace CSOMDemo
             //web.Update();
             //cc.ExecuteQuery();
 			string testName="This is a test";
+            Console.WriteLine(testName);
+
             Console.WriteLine("ok");
 
         }
