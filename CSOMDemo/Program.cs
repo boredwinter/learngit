@@ -104,7 +104,6 @@ namespace CSOMDemo
 			string testName="This is a test";
             Console.WriteLine(testName);
 		    string ss="123";
-			int num=Convert.ToInt32(ss);
             Console.WriteLine("ok");
 
         }
